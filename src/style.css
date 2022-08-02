@@ -1,0 +1,15 @@
+body {
+    background: rgb(78, 75, 75);
+    color: white;
+}
+
+button {
+    background-color: limegreen;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
