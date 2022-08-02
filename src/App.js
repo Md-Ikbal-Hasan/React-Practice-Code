@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import './style.css'
 
 // import STATE from './Components/STATE/STATE'
@@ -11,7 +12,8 @@ import React from 'react'
 // import FORM2 from './Components/FORM/FORM2'
 // import Child from './Components/STATE_LIFTING/Child'
 // import Home from './Components/STATE_LIFTING/Home'
-import Toggle from './Components/Toggle/Toggle'
+// import Toggle from './Components/Toggle/Toggle'
+import FAQS from './Components/FAQ/FAQS'
 
 export default function App() {
 
@@ -36,8 +38,8 @@ export default function App() {
       {/* <FORM2 /> */}
       {/* <Child data={data} onChildData={handleChildData} /> */}
       {/* <Home />   */}
-
-      <Toggle />
+      {/* <Toggle /> */}
+      <FAQS />
 
 
     </div>
