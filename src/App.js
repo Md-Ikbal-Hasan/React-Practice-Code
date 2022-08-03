@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import './style.css'
 
 // import STATE from './Components/STATE/STATE'
@@ -13,7 +14,8 @@ import React from 'react'
 // import Home from './Components/STATE_LIFTING/Home'
 // import Toggle from './Components/Toggle/Toggle'
 // import FAQS from './Components/FAQ/FAQS'
-import Test from './Components/HOOKS/useEffect/Test'
+// import Test from './Components/HOOKS/useEffect/Test'
+import DataFetch from './Components/HOOKS/useEffect/DataFetch'
 
 export default function App() {
   // const data = "I am from parent (app) ";
@@ -37,8 +39,9 @@ export default function App() {
       {/* <Home />   */}
       {/* <Toggle /> */}
       {/* <FAQS /> */}
+      {/* <Test /> */}
+      <DataFetch />
 
-      <Test />
 
 
 

@@ -12,6 +12,7 @@ const Test = () => {
     return (
         <div>
             {console.log("Rendering")}
+            <h1>UseEffect</h1> <hr />
             <h1>Count : {count} </h1>
             <button onClick={() => { setCount((count) => count + 1) }}>+</button>
         </div>
