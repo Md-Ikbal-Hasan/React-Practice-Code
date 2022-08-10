@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const loadingMessage = <p>todos is loading</p>;
-
-const DataFetch = () => {
-    const [todos, setTodos] = useState(null);
+const useFetch = (url) => {
+    const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/todos")
+        fetch(url)
             .then((res) => {
                 if (!res.ok) {
                     throw Error("fecthing is not successful");
@@ -17,7 +15,8 @@ const DataFetch = () => {
                 }
             })
             .then((data) => {
-                setTodos(data);
+                setData(data);
+                // console.log(data);
                 setIsLoading(false);
                 setError(null);
             })
@@ -25,22 +24,9 @@ const DataFetch = () => {
                 setError(error.message);
                 setIsLoading(false);
             });
-    }, []);
+    }, [url]);
 
-    const todosElement =
-        todos &&
-        todos.map((todo) => {
-            return <p key={todo.id}> {todo.title} </p>;
-        });
-
-    return (
-        <div>
-            <h1>Todos</h1>
-            {error && <p> {error} </p>}
-            {isLoading && loadingMessage}
-            {todosElement}
-        </div>
-    );
+    return { data, isLoading, error };
 };
 
-export default DataFetch;
+export default useFetch;

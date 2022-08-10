@@ -15,7 +15,9 @@ import React from 'react'
 // import Toggle from './Components/Toggle/Toggle'
 // import FAQS from './Components/FAQ/FAQS'
 // import Test from './Components/HOOKS/useEffect/Test'
-import DataFetch from './Components/HOOKS/useEffect/DataFetch'
+// import DataFetch from './Components/HOOKS/useEffect/DataFetch'
+// import DataFetch2 from './Components/HOOKS/CustomHooks/DataFetch2'
+import UserForm from './Components/RefExample/userForm'
 
 export default function App() {
   // const data = "I am from parent (app) ";
@@ -40,9 +42,9 @@ export default function App() {
       {/* <Toggle /> */}
       {/* <FAQS /> */}
       {/* <Test /> */}
-      <DataFetch />
-
-
+      {/* <DataFetch /> */}
+      {/* <DataFetch2 /> */}
+      <UserForm />
 
 
     </div>
