@@ -18,7 +18,9 @@ import React from 'react'
 // import DataFetch from './Components/HOOKS/useEffect/DataFetch'
 // import DataFetch2 from './Components/HOOKS/CustomHooks/DataFetch2'
 // import UserForm from './Components/RefExample/userForm'
-import Userform from './Components/HOOKS/UseRefExample/Userform'
+// import Userform from './Components/HOOKS/UseRefExample/Userform'
+import UseReducer from './Components/HOOKS/UseReducer'
+
 
 
 export default function App() {
@@ -47,7 +49,8 @@ export default function App() {
       {/* <DataFetch /> */}
       {/* <DataFetch2 /> */}
       {/* <UserForm /> */}
-      <Userform />
+      {/* <Userform /> */}
+      <UseReducer />
 
 
     </div>
