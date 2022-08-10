@@ -19,7 +19,8 @@ import React from 'react'
 // import DataFetch2 from './Components/HOOKS/CustomHooks/DataFetch2'
 // import UserForm from './Components/RefExample/userForm'
 // import Userform from './Components/HOOKS/UseRefExample/Userform'
-import UseReducer from './Components/HOOKS/UseReducer'
+// import UseReducer from './Components/HOOKS/UseReducer'
+import Component1 from './Components/PROP_DRILLING/Component1'
 
 
 
@@ -50,7 +51,8 @@ export default function App() {
       {/* <DataFetch2 /> */}
       {/* <UserForm /> */}
       {/* <Userform /> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <Component1 />
 
 
     </div>
